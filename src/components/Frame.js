@@ -120,17 +120,17 @@ class Frame extends React.Component {
       >
         <div className={`${name} frame-before-elements`}>{beforeElements}</div>
         <div className="frame-elements" style={{ height: size[1] + "px" }}>
-          <div className="visualization-layer" style={{ position: "absolute" }}>
+          <div className="visualization-layer" style={{ position: "relative", top: "0", left: "0" }}>
             <canvas
               className="frame-canvas"
               ref={canvasContext => (this.canvasContext = canvasContext)}
-              style={{ position: "absolute" }}
+              style={{ position: "relative", top: "0", left: "0" }}
               width={size[0]}
               height={size[1]}
             />
             <svg
               className="visualization-layer"
-              style={{ position: "absolute" }}
+              style={{ position: "relative", top: "0", left: "0" }}
               width={size[0]}
               height={size[1]}
             >

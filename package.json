@@ -16,7 +16,8 @@
     "publish-release": "sh ./scripts/publish-release",
     "deploy-docs": "sh ./scripts/docs",
     "ci-deploy-docs": "sh ./scripts/docs-ci",
-    "gh-pages": "REACT_APP_GH_PAGES_PATH='semiotic' npm run build"
+    "gh-pages": "REACT_APP_GH_PAGES_PATH='semiotic' npm run build",
+    "postinstall": "npm i babel-cli@^6.4.5 && npm run prebuild"
   },
   "repository": {
     "type": "git",
